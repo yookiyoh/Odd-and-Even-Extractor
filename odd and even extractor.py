@@ -5,6 +5,7 @@
 # The odd and even integers would be extracted from the main text file inputs and transfer them into separate text files in categorization
 
 # open the numbers.txt file in write mode
+with open("numbers.txt", "w") as file:
 
 # open the numbers.txt file in read mode
 
