@@ -31,6 +31,13 @@ odd_numbers = []
 numbers.sort()
 
 # iterate over the numbers and extract even and odd numbers
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
+        print("Even number found: {num}!")
+    else:
+        odd_numbers.append(num)
+        print("Odd number found: {num}!")
 
 # open the even.txt file in write mode and write even numbers to it
 
