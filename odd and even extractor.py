@@ -6,6 +6,9 @@
 
 import pyfiglet
 
+# create an introductory message
+intro = pyfiglet.figlet_format("The Number Extractor")
+
 # open the numbers.txt file in write mode
 with open("numbers.txt", "w") as file:
     # use looping to keep asking the user to input numbers
