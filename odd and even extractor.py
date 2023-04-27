@@ -19,6 +19,7 @@ with open("numbers.txt", "w") as file:
         file.write(str(num) + "\n") 
 
 # open the numbers.txt file in read mode
+with open("numbers.txt", "r") as file:
 
 # open the even.txt file in write mode and write even numbers to it
 
