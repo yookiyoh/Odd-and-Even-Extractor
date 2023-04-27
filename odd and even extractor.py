@@ -28,6 +28,7 @@ even_numbers = []
 odd_numbers = []
 
 # sort the numbers in ascending order
+numbers.sort()
 
 # iterate over the numbers and extract even and odd numbers
 
