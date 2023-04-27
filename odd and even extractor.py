@@ -20,6 +20,8 @@ with open("numbers.txt", "w") as file:
 
 # open the numbers.txt file in read mode
 with open("numbers.txt", "r") as file:
+    # read all the lines and convert them to integers
+    numbers = [int(line.strip()) for line in file.readlines()]
 
 # open the even.txt file in write mode and write even numbers to it
 
