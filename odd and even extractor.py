@@ -4,6 +4,8 @@
 # This program reads a text file that contains a set of integers
 # The odd and even integers would be extracted from the main text file inputs and transfer them into separate text files in categorization
 
+import pyfiglet
+
 # open the numbers.txt file in write mode
 with open("numbers.txt", "w") as file:
     # use looping to keep asking the user to input numbers
