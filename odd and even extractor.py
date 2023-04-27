@@ -5,6 +5,8 @@
 # The odd and even integers would be extracted from the main text file inputs and transfer them into separate text files in categorization
 
 import pyfiglet
+import time
+
 
 # create an introductory message
 intro = pyfiglet.figlet_format("The Number Extractor")
