@@ -6,6 +6,17 @@
 
 # open the numbers.txt file in write mode
 with open("numbers.txt", "w") as file:
+    # use looping to keep asking the user to input numbers
+    while True:
+        num_input = input("Enter a number: ")
+        # check if the input is a whole number
+        try:
+            num = int(num_input)
+        except ValueError:
+            # if not, break out of the loop
+            break
+        # write the number to the file
+        file.write(str(num) + "\n") 
 
 # open the numbers.txt file in read mode
 
