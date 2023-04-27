@@ -26,7 +26,7 @@ print(intro)
 with open("numbers.txt", "w") as file:
     # use looping to keep asking the user to input numbers
     while True:
-        num_input = input("Enter a number: ")
+        num_input = input(f"{Fore.YELLOW}Enter a number:{Style.RESET_ALL} ")
         # check if the input is a whole number
         try:
             num = int(num_input)
@@ -49,7 +49,8 @@ odd_numbers = []
 numbers.sort()
 
 # iterate over the numbers and extract even and odd numbers
-for num in numbers:
+for num in tqdm(numbers, desc="Extracting numbers", bar_format="{1_bar}{bar}{r_bar}"):
+    time.sleep(3) # pause for effect
     if num % 2 == 0:
         even_numbers.append(num)
         print("Even number found: {num}!")
