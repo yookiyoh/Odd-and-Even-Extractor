@@ -48,3 +48,8 @@ with open("odd.txt", "w") as file:
     file.write("\n".join(str(num) for num in odd_numbers))
 
 # print a goodbye message and terminate the program
+print("\nThank you for using this program!")
+print("Program terminating in...")
+for i in range(3, 0, -1):
+    print("{i}")
+exit()
