@@ -53,10 +53,10 @@ for num in tqdm(numbers, desc="Extracting numbers", bar_format="{1_bar}{bar}{r_b
     time.sleep(3) # pause for effect
     if num % 2 == 0:
         even_numbers.append(num)
-        print("Even number found: {num}!")
+        print(f"{Fore.GREEN} Even number found: {num}!{Style.RESET_ALL}")
     else:
         odd_numbers.append(num)
-        print("Odd number found: {num}!")
+        print(f"{Fore.CYAN} Odd number found: {num}!{Style.RESET_ALL}")
 
 # open the even.txt file in write mode and write even numbers to it
 with open("even.txt", "w") as file:
@@ -67,10 +67,11 @@ with open("odd.txt", "w") as file:
     file.write("\n".join(str(num) for num in odd_numbers))
 
 # print a goodbye message and terminate the program
-print("\nThank you for using this program!")
-print("Program terminating in...")
+print(f"{Fore.YELLOW}\nThank you for using the Number Extractor!{Style.RESET_ALL}")
+print(f"{Fore.RED}Program terminating in...{Style.RESET_ALL}")
 for i in range(3, 0, -1):
-    print("{i}")
+    print(f"{Fore.MAGENTA}{Back.WHITE}{Style.BRIGHT}{i}{Style.RESET_ALL}")
+    time.sleep(3)
 exit()
 
 # testing
