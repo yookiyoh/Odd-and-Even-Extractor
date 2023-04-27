@@ -6,7 +6,7 @@
 
 import pyfiglet
 import time
-
+from colorama import init, Fore, Back, Style
 
 # create an introductory message
 intro = pyfiglet.figlet_format("The Number Extractor")
