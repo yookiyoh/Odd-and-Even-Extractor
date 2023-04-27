@@ -23,6 +23,12 @@ with open("numbers.txt", "r") as file:
     # read all the lines and convert them to integers
     numbers = [int(line.strip()) for line in file.readlines()]
 
+# create empty lists for even and odd numbers
+
+# sort the numbers in ascending order
+
+# iterate over the numbers and extract even and odd numbers
+
 # open the even.txt file in write mode and write even numbers to it
 
 # open the odd.txt file in write mode and write odd numbers to it
