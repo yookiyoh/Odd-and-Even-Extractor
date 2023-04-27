@@ -40,6 +40,7 @@ for num in numbers:
         print("Odd number found: {num}!")
 
 # open the even.txt file in write mode and write even numbers to it
+with open("even.txt", "w") as file:
 
 # open the odd.txt file in write mode and write odd numbers to it
 
