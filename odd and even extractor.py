@@ -9,6 +9,9 @@ import time
 from colorama import init, Fore, Back, Style
 from tqdm import tqdm
 
+# initialize colorama
+init()
+
 # create an introductory message
 intro = pyfiglet.figlet_format("The Number Extractor")
 
