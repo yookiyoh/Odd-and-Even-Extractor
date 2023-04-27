@@ -41,6 +41,7 @@ for num in numbers:
 
 # open the even.txt file in write mode and write even numbers to it
 with open("even.txt", "w") as file:
+    file.write("\n".join(str(num) for num in even_numbers))
 
 # open the odd.txt file in write mode and write odd numbers to it
 
