@@ -24,6 +24,8 @@ with open("numbers.txt", "r") as file:
     numbers = [int(line.strip()) for line in file.readlines()]
 
 # create empty lists for even and odd numbers
+even_numbers = []
+odd_numbers = []
 
 # sort the numbers in ascending order
 
