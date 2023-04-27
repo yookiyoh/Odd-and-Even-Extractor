@@ -55,3 +55,4 @@ for i in range(3, 0, -1):
 exit()
 
 # testing
+# testing was a success with few minor errors in code outcome/s
