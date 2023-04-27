@@ -49,7 +49,7 @@ odd_numbers = []
 numbers.sort()
 
 # iterate over the numbers and extract even and odd numbers
-for num in tqdm(numbers, desc="Extracting numbers", bar_format="{1_bar}{bar}{r_bar}"):
+for num in tqdm(numbers, desc="Extracting numbers", bar_format="{l_bar}{bar}{r_bar}"):
     time.sleep(3) # pause for effect
     if num % 2 == 0:
         even_numbers.append(num)
