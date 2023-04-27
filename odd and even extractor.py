@@ -14,6 +14,13 @@ init()
 
 # create an introductory message
 intro = pyfiglet.figlet_format("The Number Extractor")
+intro += f"\n{Fore.YELLOW}Welcome to the Number Extractor!{Style.RESET_ALL}\n"
+intro += f"{Fore.GREEN}Enter whole numbers only.{Style.RESET_ALL}\n"
+intro += f"{Fore.CYAN}Enter any letter to terminate the program.{Style.RESET_ALL}\n"
+intro += f"{Fore.RED}Have fun in categorization!{Style.RESET_ALL}\n"
+
+# print the introductory message
+print(intro)
 
 # open the numbers.txt file in write mode
 with open("numbers.txt", "w") as file:
